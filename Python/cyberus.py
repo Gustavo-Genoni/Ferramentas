@@ -7,19 +7,14 @@ import socket
 #   Definindo argumentos
 
 args = argparse.ArgumentParser()
-
 args.add_argument("-t","--threads", help="Define os threads utilizados. Padrão 10",required=False)
-
 args.add_argument("-ip","--ipv4", help="Define o ipv4 do alvo",required=True)
-
 args.add_argument("-p","--porta",help="Define porta alvo",required=False)
-
 args.add_argument("-lp","--listaportas", help="Arquivo com portas",required=False)
 
 argumentos = args.parse_args()
 
 #   Define os threads
-
 if argumentos.threads:
     limitador = threading.Semaphore(int(argumentos.threads))
 else:
@@ -45,7 +40,7 @@ def scanner(ip,porta):
             sk.close()
             
 
-
+#    Função que cria os threads e chama scanner
 def threads_scanner(ip,portas):
     threads = []
 
@@ -58,6 +53,7 @@ def threads_scanner(ip,portas):
     for th in threads:
         th.join()
 
+#    Trata dos argumntos
 if argumentos.listaportas:
     try:
         with open(argumentos.listaportas, 'r') as f:
