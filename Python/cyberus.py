@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# Ferramenta que realiza portscan utilizando múltiplos threads, para aumentar a velocidade do scan.
+# Criador por: Gustavo Genoni
+# Criado em: 2025-12-02
+
 import argparse
 import threading
 import socket
