@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Ferramenta que realiza portscan utilizando múltiplos threads, para aumentar a velocidade do scan.
+# Ferramenta que realiza portscan utilizando múltiplos threads.
 # Criador por: Gustavo Genoni
 # Criado em: 2025-12-02
 
