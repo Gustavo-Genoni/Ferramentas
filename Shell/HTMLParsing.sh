@@ -25,7 +25,7 @@ $$ |      $$ |  $$ |$$ |  $$ |\$$$$$$  |$$ |  $$ |   $$ |   $$ | \_/ $$ |$$$$$$$
                                                                                    
                                                                                                                                                                       
 EOF
-	echo -e "${COR_AMARELA} Iniciando o parsing no algo: ${1}"
+	echo -e "${COR_AMARELA} Iniciando o parsing no alvo: ${1}"
 
 	# | grep "href" | awk -F'href' '{print $2}' | sed "s/=\"//g" | egrep "^http" | awk -F'\">' '{print $1}'
 	
