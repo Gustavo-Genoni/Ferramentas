@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+#  Banner foi copiado e adaptado de ascii.co.uk
+
 BANNER = r"""
                             /\_/\____,
                   ,___/\_/\ \  ~     /
